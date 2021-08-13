@@ -1,0 +1,20 @@
+/*general*/
+header
+nav ul
+{
+ display: flex; 
+ justify-content: space-around; 
+ justify-content: space-between; 
+ justify-content: center;
+ text-decoration: none;
+ align-items: right;
+ list-style-type: none;
+ color: blue;
+ 
+}
+
+img
+{
+ width: 120px;
+ height: 50 px;
+}
