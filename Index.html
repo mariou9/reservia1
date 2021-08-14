@@ -2,60 +2,117 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reservia1</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width"/>
+    <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"/>
+    
+    
 </head>
 <body>
     <!--HEADER-->
-      
-    <div id="container"> 
     <header>
-    
     <div id="logo">
-      <img src="./img/Reservia@3x.png" alt="logo Reservia"/>
-    </div>
-      
-     <nav>
-         <ul> 
-             <li><a href="#">Hébergements</a></li>
-             <li><a href="#">Activités</a></li>
-             <li><a href="#">S'inscrire</a></li>
-         </ul>
+          <img src="./img/Reservia@3x.png" alt="logo Reservia"/></div>
+         
+    <nav>   
+        <ul>
+             <li><a href="#"class="lien13">Hébergements</a></li>
+             <li><a href="#"class="lien2">Activités</a></l>
+            <li><a href="#"class="lien13">S'inscrire</a></li>
+        </ul>
+        </div>    
      </nav>
      </header>
     
      <!--Section 1 filtres-->
-    <SEction> </SEction>
+    <section class="section-1">
      <div id="champ de recherche">
-       
-        <h3> Trouvez votre hébergement pour des vacances de rêve</h3>
-        <h4> En plein centre ville ou en pleine nature</h4>
-        <form method="POST" action="traitement.php">
-            <nav> <a href="#"class="button">Rechercher</a></nav>
-            <p> 
-                <label for="rechercher" Rechercher></label>
-                <input type="text" name="rechercher" id="rechercher" maxlength="5"
-                placeholder="Marseille"></p>
+        
+        <h1> Trouvez votre hébergement pour des vacances de rêve</h1>    
+        <p> En plein centre ville ou en pleine nature</p>
+    </div>
+    <form method="POST" action="traitement.php">
+    <p>
+        <div><i class="fas fa-map-marker-alt"></i></div>
+        <div></div><input type="search" value="Marseille,France"></div>
+        <label for="rechercher" Rechercher></label>
+        <input type="submit"class="button"value="Rechercher"/>
+    </p>
+    </form>
      
-    <div id="filtres"
+    <div id="filtres">
+        <h3>Filtres</h3>
         <nav> 
             <ul>
-                <li><a href="#" class="button">Economique"</a></li>
+                <div><i class="fas fa-money-bill-wave"></i> </div>
+                <li><a href="#" class="button">Economique</a></li>
+                <div><i class="fas fa-child"></i></div>
                 <li><a href="#"class="button">Familial</a></li>
+                <div><i class="fas fa-heart"></i></div>
                 <li><a href="#" class="button">Romantique</a></li>
+                <div><i class="fas fa-dog"></i></div>
                 <li> <a href="#"class="button">Animaux autorisés</a></li>
             </ul>
-        </nav> 
-        </form>
-    </div>
-        <h5> Plus de 500 logements disponibles dans cette ville</h5>
-        <img src=""
+        </nav>    
+     </div>
+        <p> Plus de 500 logements disponibles dans cette ville</p>
      
-        <!--Section 2 Hebergements à Marseille-->
+    <!--Section 2 Hebergements à Marseille-->
+        <section class="section-2">
+    <div id="Hébergements à Marseille">   
+    <h3> Hébergements à Marseille</h3> 
+    <div class="bloc1">  
+    <div>
+        <div class="IMG1"></div> 
+    </div>
+    <h3>Auberge de la Cannebière</h3>
+    <p>Nuit à partir de 25e </p>
+    <div> etoile</div>
+
+    <div>
+        <div class="IMG2"></div> 
+    </div>
+    <h3>Hôtel du port</h3>
+    <p>Nuit à partir de 52e </p>
+    <div> etoile</div>
+
+    <div>
+        <div class="IMG3"></div> 
+    </div>
+    <h3>Hôtel les mouettes</h3>
+    <p>Nuit à partir de 76e </p>
+    <div> etoile</div>
+
+    <div class="bloc2">  
+    <div>
+        <div class="IMG4"></div> 
+    </div>
+    <h3>Hôtel de la mer</h3>
+    <p>Nuit à partir de 46e </p>
+    <div> etoile</div>
+
+    <div>
+        <div class="IMG5"></div> 
+    </div>
+    <h3>Auberge le panier</h3>
+    <p>Nuit à partir de 23e </p>
+    <div> etoile</div>
+
+    <div>
+        <div class="IMG6"></div> 
+    </div>
+    <h3>Hôtel chez Amina</h3>
+    <p>Nuit à partir de 96e </p>
+    <div> etoile</div>
+        </section>
     <!--Section 3 Les plus populaires-->
+
     <!--Section 4 Activités à Marseille-->
     <!--Footer A propos-->
 </body>
