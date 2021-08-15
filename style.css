@@ -1,33 +1,74 @@
-/*Ajustements generaux*/
 /*Définition de la police*/
 @font-face {
-    font-family: ;
-    src: url(;
+    font-family: "Raleway";
+    src: url(./fonts/Raleway-Regular.ttf);
+}
+{@media all and (max-device-width:480 px)}
+*{
+    font-family: "Raleway";
+}
+/*Ajustements generaux*/
+
+body
+{
+    margin: 0 auto;
+}
+/*Header*/
+header.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header.header img
+{
+     width: 90px;
+     margin-right: auto;
+} 
+header.header img
+{
+    display: flex;  
+    align-items:center;
 }
 
-/*responsive design*/   
- @media all and (max-device-width:480 px)
-
-header 
-nav ul
- {
- display: flex;
- justify-content: space-around;
- align-items: center;
-display: flex;
-justify-content: center;
-align-items: center;
-list-style-type: none;
+/*Menu de navigation*/
+ nav.nav
+{  
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-#logo img
- {
-display: flex; 
-justify-content: space-between; 
- align-items:center;
+nav.nav
+{
+   width: 25%;
+   margin-left: 20%;
+   padding: 10px;
+   height: 99px;
+   border-top:1px solid blue;
+   list-style-type: none;
+   text-decoration-style: none;
+}
+nav.nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+
+}
+nav.nav li a.lien13
+{
+ color: blue; 
+}
+nav.nav li a.lien2
+{
+ color: black;
 }
 
-/*Hebergements à Marseille*/
+/*Section 1 Filtres*/
+
+/*Section 2*Hebergements à Marseille*/
 .IMG1
 {
 background-image: url("./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -82,3 +123,101 @@ width: 100%;
 height: 120px;
 border-radius: 15px;15px;0;
 }
+
+/*Section 3: Les plus populaires*/
+.pop1
+{
+background-image: url("./img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 35%;
+height: 160px;
+border-radius: 15px;0;0;
+}
+.pop2
+{
+background-image: url("./img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 120px;
+border-radius: 15px;15px;0;
+}
+.pop3
+{
+background-image: url("./img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 120px;
+border-radius: 15px;15px;0;
+}
+
+/*Section 4: Activités à Marseille*/
+
+margin-top:;
+margin-bottom:;
+
+.act1
+{
+background-image: url("./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 120px;
+border-radius: 15px;15px;0;
+}
+
+.act2
+{
+background-image: url("./img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 250px;
+border-radius: 15px;0;0;
+}
+
+.act3
+{
+background-image: url("./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 150px;
+border-radius: 15px;0;0;
+}
+.act4
+{
+background-image: url("./img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 530px;
+border-radius: 15px;15px;0;
+}
+
+.act5
+{
+background-image: url("./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 250px;
+border-radius: 15px;0;0;
+}
+
+.act6
+{
+background-image: url("./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 200px;
+border-radius: 15px;0;0;
+}
+
+
+/*Footer*/
+height
+margin-top
