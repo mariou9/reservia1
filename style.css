@@ -9,12 +9,13 @@
 }
 
 /*Responsive design*/
+ *{
+ @media all and (max-device-width:480 px)
 
-{@media all and (max-device-width:480 px)}
-
+}
 /*Ajustements generaux*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,6 +49,22 @@ header.header img
 
 /*Menu de navigation*/
 
+div.champ h1
+{
+
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: auto;
+}
+
+
+div.champ p
+{
+    font-size: 1rem;
+    margin: auto;
+    padding: 10px;
+}
+
 nav.nav
 {
    width: 25%;
@@ -80,9 +97,11 @@ nav.nav li a.lien3
 
 /*Section 1 Filtres*/
 /*champ de recherche*/
+
 section.section1
 {
     margin: 3% ;
+    margin-top: 120px;
 }
 
 h1
@@ -165,11 +184,16 @@ nav.nav1{
     font-size: 1rem;
     margin-top: 50px;
     margin-bottom: 40px; ;
+    margin-right: 30px;
     list-style-type: none;
     font-size: 0.9rem;
     font-weight: bold;
+    cursor: pointer;
+    
 }
-.icons{
+
+.icons
+{
     border: 1px solid #f2f2f2;
     height: 40px;
     border-radius: 30px;
@@ -222,167 +246,341 @@ nav.nav1 i
     border-radius: 25px 25px 25px 25px;
 }
 
+.circle
+{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+    padding: 6px;   
+    color: #0065fc;    
+}
+
+.text
+{
+ font-size: 0.8rem;
+}
+
 /*Section 2*Hebergements à Marseille*/
+     
+section.Hébergements
+{ 
+    height: 650px;
+    margin-right: 500px;
+    margin-left: 40px;
+    margin-top:100px ;
+    padding: 10px;
+    width: 900px;
+    border-radius: 10px;
+    background-color:#f2f2f2;   
+}
 
-section.hébergements-à-Marseille
+section.Hébergements h3
 {
-margin: 3%;
+    font-size: 1rem;
+    font-weight:bolder ;
 }
-.bloc1
+
+.around
 {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.best-hebergements
+{ 
+    
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px; 
+    margin-right: 200px;
+    margin-left: 100px;
+    padding-left: 90px;
+    padding-right: 90px;
+    width: 100%;     
+ }
+
+.IMGbox
+{
+ background-size: cover;
+ background-position: center;
+ width: 190px;
+ height: 120px;
+ border: 8px solid #ffffff;
+ border-radius: 15px 15px 0 0;
+ margin-right: 10px;
+ 
 
 }
-.IMG1
+
+
+.img1
 {
-background-image: url("./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
+ background-image: url("./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");  
 }
-.IMG2
+
+.img2
 {
 background-image: url("./img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
 }
-.IMG3
+
+.img3
 {
 background-image: url("./img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
 }
-.IMG4
+
+
+.img4
 {
 background-image: url("./img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
 }
-.IMG5
+
+
+.img5
 {
 background-image: url("./img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
 }
-.IMG6
+
+.img6
 {
 background-image: url("./img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
 }
+
+.bloc1
+{  
+ display: flex;
+ justify-content: space-between; 
+ align-items: center;
+}
+
+.bloc2
+{
+ display: flex;
+ justify-content: space-between; 
+ align-items: center;
+ 
+}
+
 
 
 
 /*Section 3: Les plus populaires*/
-.pop1
+aside.Les
+{
+    
+    width: 700px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: 650px;
+    border-radius: 10px;    
+}
+
+.best-pop
+{
+    flex: 1; 
+    min-height: 120px; 
+    margin-right: 120px;
+    width: 150px;
+    justify-content: space-around;
+    flex-direction: column; 
+    align-items: center;   
+        
+}
+
+.popbox
+{
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 90px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 15px 0 0 15px;
+}
+
+.Pop1
 {
 background-image: url("./img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 35%;
-height: 160px;
-border-radius: 15px;0;0;
 }
-.pop2
+.Pop2
 {
 background-image: url("./img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
+;
 }
-.pop3
+.Pop3
 {
 background-image: url("./img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-background-size: cover;
-background-position: center;
-width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
+
 }
 
 /*Section 4: Activités à Marseille*/
 
-margin-top:;
-margin-bottom:;
+section.Activity
+{
+    margin: 120px;
+    margin-left: 100px;
+    width: 100%;
 
-.act1
+}
+
+h3
+{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1%;
+}
+.activitygrid
+{
+ display: grid;
+ min-height: 150vh;
+ width: 180vh;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows:repeat(4, 250px)
+ 
+}
+
+.activitybox
+{
+
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+}
+.activitybox:hover
+{
+ transform: scale(1.1);
+}
+
+.activitygrid1
 {
 background-image: url("./img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-background-size: cover;
-background-position: center;
+grid-column: 1;
+grid-row: 1;
 width: 100%;
-height: 120px;
-border-radius: 15px;15px;0;
+height: 70vh;
+margin-right: 10vh;
+margin-bottom: 30px;
+border: 10px solid #ffffff;
+border-radius: 20px;
+box-shadow: 10px 10px 10px #f2f2f2;
 }
 
-.act2
+.activitygrid2
 {
 background-image: url("./img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+grid-column: 2;
 background-size: cover;
 background-position: center;
 width: 100%;
-height: 250px;
-border-radius: 15px;0;0;
+height: 25vh;
+border-radius: 15px;
+border: 10px solid #ffffff;
+box-shadow: 10px 10px 10px #f2f2f2;
 }
 
-.act3
+.activitygrid3
 {
 background-image: url("./img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+grid-column:2;
 background-size: cover;
 background-position: center;
 width: 100%;
-height: 150px;
-border-radius: 15px;0;0;
+height: 25vh;
+border-radius: 15px;
+border: 10px solid #ffffff;
+box-shadow: 10px 10px 10px #f2f2f2;
 }
-.act4
+.activitygrid4
 {
 background-image: url("./img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+grid-column: 3;
+grid-row: 1;
 background-size: cover;
 background-position: center;
 width: 100%;
-height: 530px;
-border-radius: 15px;15px;0;
+height: 70vh;
+border-radius: 15px;
+border: 10px solid #ffffff;
+box-shadow: 10px 10px 10px #f2f2f2;
 }
 
-.act5
+.activitygrid5
 {
 background-image: url("./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+grid-column: 4;
+grid-row: 1;
 background-size: cover;
 background-position: center;
 width: 100%;
-height: 250px;
-border-radius: 15px;0;0;
+height: 25vh;
+border-radius: 15px;
+border: 10px solid #ffffff;
+box-shadow: 10px 10px 10px #f2f2f2;
 }
 
-.act6
+.activitygrid6
 {
 background-image: url("./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+grid-column: 4;
 background-size: cover;
 background-position: center;
 width: 100%;
-height: 200px;
-border-radius: 15px;0;0;
+height: 25vh;
+border-radius: 15px;
+border: 10px solid #ffffff;
+box-shadow: 10px 10px 10px #f2f2f2;
 }
 
 
 /*Footer*/
-height
-margin-top
+section.bottom-page
+{
+    background-color: #f2f2f2;
+    width: 100%%;
+    height: 250px;
+    margin-top: 50px;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px
+}
+
+footer.footer
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h3
+{
+    font-size: 1rem;
+    font-weight: bold;   
+    margin-left: 15%;
+    margin-right: 20%;
+    padding: 20px;
+}
+footer p
+{ 
+    font-size: 0.9rem;
+    margin-right: 20%;
+    margin-left: 20%;
+    width: 70%; 
+}
+.endfoot
+{
+    height: 150px;
+    width: 25%;
+}
