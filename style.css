@@ -267,19 +267,23 @@ nav.nav1 i
 
 /*Section 2*Hebergements à Marseille*/
      
-section.Hebergements
+.Hebergements
 { 
-    height: 650px;
-    margin-right: 500px;
+   /* height: 650px;
+   
     margin-left: 40px;
     margin-top:100px ;
     padding: 10px;
     width: 900px;
     border-radius: 10px;
-    background-color:#f2f2f2;   
+    background-color:#f2f2f2;  */
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    column-gap: 40px;
+    margin : 40px 0 60px 0; 
 }
 
-section.Hebergements h3
+.Hebergements h3
 {
     font-size: 1rem;
     font-weight:bolder ;
@@ -295,7 +299,7 @@ section.Hebergements h3
 .best-hebergements
 { 
     
-    flex: 2;
+   /* flex: 2;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -304,7 +308,16 @@ section.Hebergements h3
     margin-left: 100px;
     padding-left: 90px;
     padding-right: 90px;
-    width: 100%;     
+    width: 100%;    */
+    display: flex; 
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    padding: 0px 20px 0px 20px;
+    background-color:#f2f2f2; 
+    border-radius:25px;
+
+
  }
 
 .IMGbox
